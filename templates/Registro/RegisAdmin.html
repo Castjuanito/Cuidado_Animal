@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="RegisAdmin.css">
+    <title>Registro Administrador</title>
+</head>
+<body style="background:url(../Imagenes/fondo.png)">
+<!--Inicio Formulario-->
+<div class="text-center fondo1">
+    <form>
+        <div class="row form-group d-flex justify-content-center mb-0">
+            <label class="tituloForm mb-0 mt-3">Registro de Administrador</label>
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Nombres</label>
+                <input type="text" class="form-control" name="nombres" placeholder="Nombres">
+            </div>
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Apellidos</label>
+                <input type="text" class="form-control" name="apellidos" placeholder="Apellidos">
+            </div>
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Nombre de Usuario</label>
+                <input type="text" class="form-control" name="nomUsuario" placeholder="Nombre de usuario">
+            </div>
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Contraseña</label>
+                <input type="password" class="form-control" name="nomUsuario" placeholder="Contraseña">
+                <small class="letraForm">
+                    Debe contener de 8 a 10 caracteres.
+                </small>
+            </div>
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Confirma Contraseña</label>
+                <input type="password" class="form-control" name="email" placeholder="Contraseña">
+            </div>
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Foto de Perfil</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="archivoImagen" onChange="mostrarArchivo()">
+                    <label class="custom-file-label" id="tituloArch">Selecionar Archivo</label>
+                </div>
+            </div>
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary mb-3">Siguiente</button>
+        </div>
+    </form>
+</div>
+<!--Fin Formulario-->
+<script src="../js/bootstrap.js"></script>
+<script src="RegisAdmin.js"></script>
+</body>
+</html>
