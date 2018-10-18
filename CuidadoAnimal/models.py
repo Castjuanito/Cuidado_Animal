@@ -39,7 +39,7 @@ class AdminostradorCentroVeterinario(models.Model):
 class Usuario(models.Model):
     nombre = models.CharField(max_length=20)
     apellido = models.CharField(max_length=20)
-    cedula = models.IntegerField(max_length=12)
+    cedula = models.IntegerField
     password = models.CharField(max_length=1000)  # type: Any
 
 
@@ -49,7 +49,7 @@ class MedicoVeterinario(Usuario):
 
 class DuenoMascota(Usuario):
     direccion = models.CharField(max_length=30)
-    telefono = models.IntegerField(max_length=12)
+    telefono = models.IntegerField
     correo = models.CharField(max_length=30)
 
 
@@ -65,18 +65,18 @@ class Mascota(models.Model):
     )
     genero = models.CharField(max_length=1, choices=GENEROS)
     color = models.CharField(max_length=10)
-    edad = models.IntegerField(max_length=3)
+    edad = models.IntegerField
     dueno = models.ForeignKey(
         DuenoMascota,
         on_delete=models.CASCADE,
     )
 
 class Calificacion(models.Model):
-    calificacion = models.IntegerField(max_length=1)
+    calificacion = models.IntegerField
     dueno = models.ForeignKey(DuenoMascota,
-                              on_delete=models.SET_DEFAULT)
+                              on_delete=models.CASCADE)
     cVeterinario = models.OneToOneField(CentroVeterinario,
-                                        on_delete=models.SET_DEFAULT)
+                                        on_delete=models.CASCADE)
 
 
 class HistoriaClinica(models.Model):
