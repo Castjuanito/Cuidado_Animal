@@ -3,6 +3,9 @@ from typing import Any
 from django.db import models
 
 
+class Fruta(models.Model):
+    nombre = models.CharField(max_length=30)
+
 class CentroVeterinario(models.Model):
 
     nombre = models.CharField(max_length=30)
