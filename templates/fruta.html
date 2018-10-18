@@ -1,5 +1,5 @@
-<form action="/fruta/" method="post">
+<form action="/fruta/" method="POST">{% csrf_token %}
     <label for="fruta">ingrese fruta: </label>
-    <input id="fruta" type="text" name="fruta" value="{{ fruta_ing }}">
+    <input id="fruta" type="text" name="fruta">
     <input type="submit" value="OK">
 </form>
