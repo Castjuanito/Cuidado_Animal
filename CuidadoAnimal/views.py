@@ -4,6 +4,10 @@ from .forms import FrutaForm
 from .models import Fruta
 
 
+def home(request):
+
+    return render((request, ""))
+
 def listaUsuarios(request):
     queryset = Fruta.objects.raw('SELECT * FROM CuidadoAnimal_fruta')
     queryset2 = Fruta.objects.all()

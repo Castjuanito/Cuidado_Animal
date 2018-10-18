@@ -18,9 +18,10 @@ from django.urls import path
 
 from CuidadoAnimal.views import listaUsuarios, get_fruta
 
+
+
 urlpatterns = [
 
-    path('contact/', listaUsuarios),
-    path('fruta/', get_fruta),
+    path('', home)
     path('admin/', admin.site.urls),
 ]
