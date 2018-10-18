@@ -5,8 +5,9 @@ from .models import Fruta
 
 
 def home(request):
+    context = {}
+    return render(request, 'login/login.html', context)
 
-    return render((request, ""))
 
 def listaUsuarios(request):
     queryset = Fruta.objects.raw('SELECT * FROM CuidadoAnimal_fruta')

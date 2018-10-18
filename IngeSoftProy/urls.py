@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from CuidadoAnimal.views import listaUsuarios, get_fruta
+from CuidadoAnimal.views import home
 
 
 
 urlpatterns = [
 
-    path('', home)
+    path('', home),
     path('admin/', admin.site.urls),
 ]
