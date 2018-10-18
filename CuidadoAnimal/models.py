@@ -66,17 +66,23 @@ class Mascota(models.Model):
     genero = models.CharField(max_length=1, choices=GENEROS)
     color = models.CharField(max_length=10)
     edad = models.IntegerField(max_length=3)
-
+    dueno = models.ForeignKey(
+        DuenoMascota,
+        on_delete=models.CASCADE,
+    )
 
 class Calificacion(models.Model):
     calificacion = models.IntegerField(max_length=1)
+    dueno = models.ForeignKey(DuenoMascota,
+                              on_delete=models.SET_DEFAULT)
+    cVeterinario = models.OneToOneField(CentroVeterinario,
+                                        on_delete=models.SET_DEFAULT)
 
 
 class HistoriaClinica(models.Model):
-    mascota = models.OneToOneField(
+    mascota = models.ForeignKey(
         Mascota,
         on_delete=models.CASCADE,
-        primary_key=True,
     )
 
 
@@ -84,8 +90,17 @@ class Casos(models.Model):
     fechaInicio = models.DateField()
     fechaFin = models.DateField()
     descripcion = models.TextField(max_length=1000)
+    hClinica = models.ForeignKey(
+        HistoriaClinica,
+        on_delete=models.CASCADE,
+    )
 
 
 class DescripcionCosto(models.Model):
     costo = models.FloatField(max_length=10)
     descripcion = models.CharField(max_length=30)
+    casos = models.OneToOneField(
+        Casos,
+        on_delete=models.CASCADE,
+        primary_key=True,
+    )
