@@ -5,12 +5,18 @@
     <title></title>
 </head>
 <body>
-{% for obj in lista %}
+<table>
 
-    {{ obj.nombre }}<br/>
+    {% for obj in lista %}
+
+        <tr>
+            <th>
+                {{ obj.nombre }}
+            </th>
+        </tr>
 
 {% endfor %}
 
-
+</table>
 </body>
 </html>
