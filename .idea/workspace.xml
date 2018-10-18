@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e279592-5975-41a6-aea8-2c54bb317d76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CuidadoAnimal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CuidadoAnimal/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +44,13 @@
           <entry key="gitignore" value="1" />
           <entry key="md" value="51" />
           <entry key="py" value="1019" />
-          <entry key="txt" value="52" />
+          <entry key="txt" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="51" />
-          <entry key="PLAIN_TEXT" value="53" />
+          <entry key="PLAIN_TEXT" value="58" />
           <entry key="Python" value="1019" />
         </counts>
       </usages-collector>
@@ -62,14 +61,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CuidadoAnimal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+            <state relative-caret-position="270">
+              <caret line="56" column="49" lean-forward="true" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
               <folding>
-                <marker date="1539841791564" expanded="true" signature="86:91" ph="..." />
-                <marker date="1539841791564" expanded="true" signature="1027:1082" ph="..." />
-                <marker date="1539841791564" expanded="true" signature="1120:1125" ph="..." />
-                <marker date="1539841791564" expanded="true" signature="1268:1273" ph="..." />
-                <marker date="1539841791564" expanded="true" signature="1431:1436" ph="..." />
+                <marker date="1539841803924" expanded="true" signature="86:91" ph="..." />
+                <marker date="1539841803924" expanded="true" signature="1027:1082" ph="..." />
+                <marker date="1539841803924" expanded="true" signature="1119:1124" ph="..." />
+                <marker date="1539841803924" expanded="true" signature="1267:1272" ph="..." />
+                <marker date="1539841803924" expanded="true" signature="1430:1435" ph="..." />
               </folding>
             </state>
           </provider>
@@ -167,7 +166,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="commi&#9;ACTION&#9;CheckinProject&#10;comm&#9;ACTION&#9;CheckinProject&#10;pull&#9;ACTION&#9;Vcs.UpdateProject&#10;push&#9;ACTION&#9;Vcs.Push&#10;git&#9;ACTION&#9;Git.Menu&#10;push.&#9;ACTION&#9;Vcs.Push&#10;commit&#9;ACTION&#9;CheckinProject" />
+    <property name="SearchEverywhereHistoryKey" value="comm&#9;ACTION&#9;CheckinProject&#10;commi&#9;ACTION&#9;CheckinProject&#10;pull&#9;ACTION&#9;Vcs.UpdateProject&#10;push&#9;ACTION&#9;Vcs.Push&#10;git&#9;ACTION&#9;Git.Menu&#10;push.&#9;ACTION&#9;Vcs.Push&#10;commit&#9;ACTION&#9;CheckinProject" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
@@ -261,12 +260,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539840643855</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="salu2">
+      <created>1539841806368</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1539841806368</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -281,7 +286,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49924356" visible="true" weight="0.3276923" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27685326" side_tool="true" visible="true" weight="0.3276923" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.27685326" side_tool="true" visible="true" weight="0.3276923" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.72314674" weight="0.32923076" />
       <window_info anchor="bottom" id="Python Console" order="13" />
@@ -305,7 +310,8 @@
     <MESSAGE value="Update readme !" />
     <MESSAGE value="classes" />
     <MESSAGE value="jaja" />
-    <option name="LAST_COMMIT_MESSAGE" value="jaja" />
+    <MESSAGE value="salu2" />
+    <option name="LAST_COMMIT_MESSAGE" value="salu2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -338,14 +344,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CuidadoAnimal/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+        <state relative-caret-position="270">
+          <caret line="56" column="49" lean-forward="true" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
           <folding>
-            <marker date="1539841791564" expanded="true" signature="86:91" ph="..." />
-            <marker date="1539841791564" expanded="true" signature="1027:1082" ph="..." />
-            <marker date="1539841791564" expanded="true" signature="1120:1125" ph="..." />
-            <marker date="1539841791564" expanded="true" signature="1268:1273" ph="..." />
-            <marker date="1539841791564" expanded="true" signature="1431:1436" ph="..." />
+            <marker date="1539841803924" expanded="true" signature="86:91" ph="..." />
+            <marker date="1539841803924" expanded="true" signature="1027:1082" ph="..." />
+            <marker date="1539841803924" expanded="true" signature="1119:1124" ph="..." />
+            <marker date="1539841803924" expanded="true" signature="1267:1272" ph="..." />
+            <marker date="1539841803924" expanded="true" signature="1430:1435" ph="..." />
           </folding>
         </state>
       </provider>
