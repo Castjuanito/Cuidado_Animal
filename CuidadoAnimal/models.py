@@ -32,3 +32,7 @@ class Mascota(models.Model):
     genero = models.CharField(max_length=1, choices=GENEROS)
     color = models.CharField(max_length=10)
     edad = models.IntegerField(max_length=3)
+
+
+class Calificacion(models.Model):
+    calificacion = models.IntegerField(max_length=1)
