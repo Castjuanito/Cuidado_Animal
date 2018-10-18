@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="RegisCliente.css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Registro Cliente</title>
+</head>
+<body style="background:url(../Imagenes/fondo.png)">
+<div class="text-center fondo1">
+    <form id="regisVete">
+        <div class="row d-flex justify-content-center mb-0">
+            <label class="tituloForm mb-0 mt-3">Registro de Cliente</label>
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Nombres</label>
+                <input type="text" class="form-control" name="nombres" placeholder="Nombres">
+            </div>
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Apellidos</label>
+                <input type="text" class="form-control" name="apellidos" placeholder="Apellidos">
+            </div>
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Foto de perfil</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="archivoImagen" onChange="mostrarArchivo()">
+                    <label class="custom-file-label" id="tituloArch">Selecionar Archivo</label>
+                </div>
+            </div>
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Telefono</label>
+                <input type="text" class="form-control" name="Telefono" placeholder="Telefono">
+            </div>
+        </div>
+        <!--Fila 2 datos de ubicación-->
+        <div class="row d-flex justify-content-center mb-0">
+            <label class="tituloForm mb-0 mt-3">Ubicación</label>
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <!--Campo Ciudad-->
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Ciudad</label>
+                <input type="text" class="form-control" name="Ciudad" placeholder="Ciudad">
+            </div>
+            <!--Fin Campo Ciudad-->
+            <!--Campo Campo Localidad-->
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Localidad</label>
+                <input type="text" class="form-control" name="Localidad" placeholder="Localidad">
+            </div>
+            <!--Fin Campo Localidad-->
+        </div>
+        <div class="row form-group d-flex justify-content-center">
+            <!--Campo Bario-->
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Barrio</label>
+                <input type="text" class="form-control" name="Barrio" placeholder="Barrio">
+            </div>
+            <!--Fin Campo Barrio-->
+            <!--Campo Direccion-->
+            <div class="col-5 p-0 campo">
+                <label class="letraForm">Dirección</label>
+                <div class="row">
+                    <!--Calle o carrera-->
+                    <select class="form-control col-2 ml-3 px-2">
+                        <option>Cll</option>
+                        <option>Crr</option>
+                    </select>
+                    <!--Fin call o carrera-->
+                    <!--Numero de calle o carrera-->
+                    <input type="text" class="form-control col-2 ml-3 px-2" name="num1" placeholder="00">
+                    <!--Fin Numero de calle o carrera-->
+                    <label class="letraForm col-1 mx-0 px-2">No</label>
+                    <!--Numero 1 dirección-->
+                    <input type="text" class="form-control col-2 ml-2 px-2" name="num2" placeholder="00">
+                    <!--Fin Numero 1 dirección-->
+                    <label class="letraForm col-1 px-2">-</label>
+                    <!--Numero 2 dirección-->
+                    <input type="text" class="form-control col-2 mx-0 px-2" name="num3" placeholder="00">
+                    <!--Fin Numero 2 dirección-->
+                </div>
+            </div>
+            <!--Fin Campo Direccion-->
+        </div>
+        <!--Fin Fila 2 datos de ubicación-->
+        <div class="row form-group d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary mb-3">Finalizar Registro</button>
+        </div>
+    </form>
+</div>
+<script src="../js/bootstrap.js"></script>
+<script src="RegisCliente.js"></script>
+</body>
+</html>
