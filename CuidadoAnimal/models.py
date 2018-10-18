@@ -36,3 +36,22 @@ class Mascota(models.Model):
 
 class Calificacion(models.Model):
     calificacion = models.IntegerField(max_length=1)
+
+
+class HistoriaClinica(models.Model):
+    mascota = models.OneToOneField(
+        Mascota,
+        on_delete=models.CASCADE,
+        primary_key=True,
+    )
+
+
+class Casos(models.Model):
+    fechaInicio = models.DateField()
+    fechaFin = models.DateField()
+    descripcion = models.TextField(max_length=1000)
+
+
+class DescripcionCosto(models.Model):
+    costo = models.FloatField(max_length=10)
+    descripcion = models.CharField(max_length=30)
