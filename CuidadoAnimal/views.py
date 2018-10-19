@@ -1,8 +1,8 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
-from .forms import FrutaForm
-from .models import Fruta
+from .forms import *
+from .models import *
 
 
 def listaUsuarios(request):
@@ -35,3 +35,24 @@ def get_fruta(request):
         print("hola2")
 
     return render(request, 'fruta.html', {'form': form})
+
+
+def logUser(request):
+    # if this is a POST request we need to process the form data
+    if request.method == "POST":
+        # create a form instance and populate it with data from the request:
+        form = LogInForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            print("hola1")
+            # process the data in form.cleaned_data as required
+            # ...
+
+            # redirect to a new URL:
+        return HttpResponseRedirect('/contact/')
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = LogInForm()
+        print("hola2")
+
+    return render(request, 'login.html', {'form': form})

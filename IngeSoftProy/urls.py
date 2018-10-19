@@ -23,4 +23,5 @@ urlpatterns = [
     path('contact/', listaUsuarios),
     path('fruta/', get_fruta),
     path('admin/', admin.site.urls),
+    path('loGin/', logUser),
 ]
